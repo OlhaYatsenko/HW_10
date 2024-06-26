@@ -3,13 +3,12 @@
 }
 
 :root {
-
     --font-sm: 15px;
     --font-md: 18px;
     --font-xl: 25px;
     --font-defolt: 20px;
 
-    --title-font-sm: 30px;
+    --title-font-sm: 35px;
     --title-font-md: 50px;
     --title-font-xl: 65px;
 
@@ -21,21 +20,17 @@
 
     --bg--main-color: #FFFFFF;
     --separator-color: #CCCCCC;
+    --separator-rate-color: #1D1D1B;
     --bg-localization-color: #FF9C7D;
     --bg-localize-color: #FFF8E4;
+    --bg-person-color: #C9E8F2;
+    --bg-reviews-color: #DABC98;
 
     --btn-small-width: 120px;
     --btn--small-height: 45px;
 
     --btn-big-width: 160px;
     --btn--big-height: 60px;
-
-    /*
-    --info-gap-width: 30px;
-    --info-block-width: calc(50% - (var(--info-gap-width) / 2));
-
-    --categories-gap-width: 30px;
-    --category-width: calc(25% - (var(--info-gap-width) / 2));*/
 }
 
 body {
@@ -58,7 +53,7 @@ a {
 }
 
 .container {
-    max-width: 1330px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -296,7 +291,7 @@ a {
 
 /* Advantages-end */
 
-/* localize-start */
+/* Localize-start */
 
 .localize{
     background-color: var(--bg-localize-color);
@@ -337,9 +332,9 @@ a {
     font-size: var(--font-md);
 }
 
-/* localize-end */
+/* Localize-end */
 
-/* team-start */
+/* Boost-start */
 
 .boost{
     padding-top: 154px;
@@ -355,13 +350,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.boost__teams-item {
-
-}
-
 .boost__teams-image {
     margin-top: 50px;
     margin-bottom: 49px;
+    min-height: 201px;
 }
 
 .boost__teams-title {
@@ -371,7 +363,7 @@ a {
 
 .boost__teams-description {
     margin-bottom: 25px;
-    font-size: var(--font-md);
+    font-size: var(--font-defolt);
     max-width: 409px;
 }
 
@@ -379,7 +371,89 @@ a {
 
 }
 
-/* team-end */
+/* Boost-end */
+
+/* Person-start */
+
+.person{
+    background-color: var(--bg-person-color);
+    height: 468px;
+}
+
+.person__content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 43px 0 105px;
+}
+
+.person__content-description{
+    width: 800px;
+}
+
+.person__content-blockquote{
+    font-size: var(--font-xl);
+}
+
+.person__content-author{
+    font-size: var(--font-sm);
+    margin-top: 23px;
+    margin-bottom: 7px;
+}
+
+.person__content-image{
+    margin-left: auto
+}
+
+/* Person-end */
+
+/* Reviews-start */
+
+.reviews{
+    background-color: var(--bg-reviews-color);
+}
+
+.reviews__content{
+    display: flex;
+    padding-top: 79px;
+    padding-bottom: 80px;
+}
+
+.reviews__content-description{
+    display: flex;
+    width: 809px;
+    border-right: 2px solid var(--separator-rate-color);
+}
+
+.reviews__content-item{
+    width: 50%;
+}
+
+.reviews__content-text{
+    font-size: var(--font-xl);
+    max-width: 461px;
+    padding: 47px 0 31px 67px;
+}
+
+.reviews__content-rate{
+    display: flex;
+    width: 481px;
+    padding: 30px 62px 22px 71px;
+}
+
+.reviews__content-logo{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.reviews__content-stars{
+    padding-bottom: 14px;
+}
+
+.reviews__content-info{
+    font-size: var(--font-sm);
+}
+
+/* Reviews-end */
 
 /* Main-end */
 
