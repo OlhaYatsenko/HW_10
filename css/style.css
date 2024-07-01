@@ -367,10 +367,6 @@ a {
     max-width: 409px;
 }
 
-.boost__team-link{
-
-}
-
 /* Boost-end */
 
 /* Person-start */
@@ -457,6 +453,128 @@ a {
 
 /* Main-end */
 
+/*
+ breakpoints
+ xxl - 1300px
+ xl - 992px
+ md - 768px
+ sm - 576px
+*/
 
+@media (max-width: 1300px) {
+    .container {
+        max-width: 992px;
+    }
+    .introduction__content {
+        background-size: 470px;
+    }
+    .header__content-left .header__menu {
+        gap: 12px;
+        margin: 31px 0 24px;
+    }
+    .introduction{
+        padding: 50px 0 80px;
+    }
+    .advantages{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .advantages__blocks{
+        gap: 0;
+    }
+    .advantages__advantage{
+        gap: 150px;
+        background-size: 460px;
+    }
+    .localize{
+    padding-bottom: 30px;
+    }
+    .localize__title{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .boost{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .boost__title{
+        padding-bottom: 5px;
+    }
+    .boost__teams{
+        column-gap: 20px;
+    }
+    .person{
+        height: 400px;
+    }
+    .person__content-description{
+        width: 600px;
+    }
+    .reviews__content-image{
+        display: flex;
+        align-items: center;
+    }
+    .reviews__content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .reviews__content-item{
+        width: 50%;
+    }
+    .reviews__content-text{
+        max-width: 600px;
+    }
+    .reviews__content-rate{
+        display: flex;
+        width: 581px;
+        padding: 30px 32px 15px 41px;
+    }
+    .reviews__content-logo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .reviews__content-stars{
+        padding-bottom: 14px;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .introduction__content {
+        background-image: none;
+    }
+    .header__content-left .header__menu {
+        gap: 12px;
+        margin: 31px 0 24px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    header nav {
+        display: none;
+    }
+    .introduction__content {
+        background-image: none;
+    }
+}
+
+@media (max-width:  576px) {
+    .container {
+        max-width: 100%;
+    }
+}
 
 
