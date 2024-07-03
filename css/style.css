@@ -218,6 +218,7 @@ a {
 .advantages{
     margin-top: 100px;
     margin-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .advantages__blocks{
@@ -493,6 +494,9 @@ a {
         padding-top: 60px;
         padding-bottom: 30px;
     }
+    .localize__lokalise-description a {
+        font-size: var(--font-md);
+    }
     .boost{
         padding-top: 80px;
         padding-bottom: 100px;
@@ -537,10 +541,6 @@ a {
     }
 }
 
-
-
-
-
 @media (max-width: 992px) {
     .container {
         max-width: 768px;
@@ -548,16 +548,108 @@ a {
     .introduction__content {
         background-image: none;
     }
-    .header__content-left .header__menu {
-        gap: 12px;
-        margin: 31px 0 24px;
+    .header__content-left .header__menu{
+        display: none;
     }
-
+    .header__content-right{
+        padding-top: 25px;
+    }
+    .introduction{
+        padding: 0 0 40px;
+    }
+    .introduction h1{
+        max-width: 800px;
+        font-size: var(--title-font-md);
+    }
+    .introduction p{
+        max-width: 600px;
+    }
+    .localization__title{
+        padding-top: 28px;
+    }
+    .localization__companies{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        column-gap: 50px;
+    }
+    .advantages{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .advantages__blocks{
+        gap: 50px;
+    }
+    .advantages__advantage{
+        gap: 50px;
+        min-height: 200px;
+    }
+    .advantages__picture-left{
+        background-position: right;
+        justify-content: left;
+    }
+    .advantages__advantage-1{
+        background-image: none;
+    }
+    .advantages__advantage-2{
+        background-image: none;
+    }
+    .advantages__advantage-3{
+        background-image: none;
+    }
+    .advantages__advantage-4{
+        background-image: none;
+    }
+    .advantages h2, p, a{
+        margin-top: 50px;
+        max-width: 910px;
+    }
+    .advantages__blocks{
+        gap: 0;
+    }
+    .localize__lokalise{
+        column-gap: 60px;
+        row-gap: 50px;
+    }
+    .boost{
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .boost__teams-title {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    .boost__teams-description {
+        font-size: var(--font-md);
+    }
+    .link-underline{
+        font-size: var(--font-md);
+    }
+    .person{
+        height: 350px;
+    }
+    .person__content-blockquote{
+        font-size: var(--font-md);
+    }
+    .person__content-description{
+        width: 400px;
+    }
+    .person img{
+        max-width: 80%;
+    }
+    .reviews__content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .reviews__content-text{
+        max-width: 300px;
+        font-size: var(--font-md);
+        padding: 10px 20px 30px 40px;
+    }
+    .reviews__content-rate{
+        width: 620px;
+        padding: 20px 0 5px 31px;
+    }
 }
-
-
-
-
 
 @media (max-width: 768px) {
     .container {
@@ -568,6 +660,98 @@ a {
     }
     .introduction__content {
         background-image: none;
+    }
+    .introduction h1{
+        max-width: 500px;
+        font-size: var(--title-font-sm);
+    }
+    .introduction p{
+        max-width: 550px;
+    }
+    .localization__title{
+        padding-top: 28px;
+    }
+    .localization__companies{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        grid-template-columns: repeat(3, 2fr);
+        column-gap: 50px;
+        row-gap: 40px;
+    }
+    .localize{
+        padding-bottom: 10px;
+    }
+    .localize__title{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: var(--font-md);
+    }
+    .localize__lokalise{
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .localize__lokalise-title {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: var(--font-sm);
+    }
+    .localize__lokalise-description  {
+        font-size: var(--font-sm);
+    }
+    .localize__lokalise-description a {
+        font-size: var(--font-sm);
+    }
+    .boost{
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .boost__title{
+        padding-bottom: 0;
+    }
+    .boost__teams-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .boost__teams-description {
+        margin-bottom: 5px;
+        font-size: var(--font-sm);
+        margin-top: 20px;
+    }
+    .boost__teams-description a{
+        font-size: var(--font-sm);
+    }
+    .person{
+        height: 350px;
+    }
+    .person__content{
+        padding: 23px 0 55px;
+        flex-wrap: nowrap;
+    }
+    .person__content-description{
+        width: 450px;
+    }
+    .person__content-blockquote{
+        font-size: var(--font-md);
+    }
+    .person img{
+        max-width: 100%;
+    }
+    .person__content-image{
+        padding-left: 30px;
+    }
+    .reviews__content-text{
+        font-size: var(--font-sm);
+        padding: 0 20px 30px 40px;
+    }
+    .reviews__content-info{
+        font-size: 12px;
+    }
+    .reviews__content-logo{
+        height: 60px;
+        padding-right: 20px;
+    }
+    .reviews__content-stars{
+        padding-right: 20px;
     }
 }
 
